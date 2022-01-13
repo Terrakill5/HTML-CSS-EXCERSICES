@@ -1,0 +1,72 @@
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+header ul{
+    display: flex;;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li{
+    margin-left: 20px;
+    padding-top: 20px;
+}
+
+header{ /* Posicion absoluta sirve para sacar del flujo de espacio a la caja */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    position: absolute;
+    padding: 15px 60px;
+    top: 0;
+    left: 0;
+    box-sizing: border-box; /* Se usa para que tenga un limite de espacio en consideracion a su padre*/
+}
+
+header a{
+    color: rgb(255, 251, 0);
+    text-decoration: none;
+    font-size: 20px;
+    padding: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+header a:hover{
+    color: black;
+    background-color: rgb(255, 251, 0);
+    border-radius: 8px;
+}
+
+#page-logo a{
+    padding: 10px;
+    font-family: 'Oleo Script', cursive;
+    color: rgb(245, 243, 160);
+    font-size: 50px; 
+    text-decoration: none;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgb(0, 0, 0);
+}
+
+footer{
+    background: linear-gradient(70deg, rgb(24,24,24), rgb(25,29,29));
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    padding: 36px;
+}
+footer li{
+    width: 80px;
+    height: 80px;
+    margin: 0 50px;
+}
+
+footer img{
+    width: 100%;
+    height: 100%;
+}
