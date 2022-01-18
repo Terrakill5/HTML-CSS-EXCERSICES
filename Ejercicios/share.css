@@ -3,6 +3,10 @@ body{
     margin: 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 header ul{
     display: flex;;
     list-style: none;

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <h1>Demo Form</h1> 
+    </header>
+    
+    <main>
+        <form action="/" method="GET">
+            <section>
+                <ul>
+                    <li>
+                        <label for="username">Your name</label>
+                        <input type="text" name="user-name" id="username" required placeholder="Max">
+                    </li>
+                    <li>
+                        <label for="useremail" >Your email address</label>
+                        <input type="email" name="user-email" id="useremail" required>
+                    </li>
+                    <li>
+                        <label for="userpassword">Your password</label>
+                        <input type="password" name="user-password" id="userpassword" required minlength="7">
+                    </li>
+
+                </ul>
+                
+                
+                
+            </section>
+            
+    
+            <label for="user-message">Your message</label>
+            <textarea name="usermessage" id="user-message" rows="4"></textarea>
+    
+    
+            
+            <label for="userage">Your age here</label>
+            <input type="number" step="1" name="user-age" id="userage" required min="18" max="100">
+            
+            <label for="userdate">Your Birthday</label>
+            <input type="date" name="user-date" id="userdate" required min="1921-01-01" max="2022-24-12">
+            <hr>
+            <label for="favorite-color">Your favorite color?</label>
+            <select id="favorite-color" name="color">
+                <option value="Blue">Blue</option>
+                <option value="Black">Black</option>
+                <option value="Red">Red</option>
+                <option value="Yellow">Yellow</option>
+    
+            </select>
+    
+    
+            <h2>How should we verify your account?</h2>
+            <div class="control-inline">
+                <input type="radio" id="text" name="verify" value="text-verify" required>
+                <label for="text">Via text message</label>
+                
+            </div>
+            <div class="control-inline">
+                <input type="radio" name="verify" id="call" value="call-verify">
+                <label for="call">Via a phone call</label>
+                
+            </div>
+            <div class="control-inline">
+                <input type="radio" name="verify" id="email" value="email-verify">
+                <label for="email">Via an email</label>
+                
+            </div>
+            <div class="control-inline">
+                <input type="checkbox" name="terms" id="agree-terms">
+                <label for="agree-terms">Agree to terms?</label>
+            </div>
+            <div class="control-inline">
+                <input type="checkbox" name="contact" id="contact-email" value="email">
+                <label for="contact-email">Contact me via email</label>
+            </div>
+            <div class="control-inline">
+                <input type="checkbox" name="contact" id="contact-phone" value="phone">
+                <label for="contact-phone">Contact me via phone</label>
+            </div>
+            
+            
+    
+            <button >Submit</button>
+            <button type="reset">Clear</button>
+            
+        </form>
+    </main>
+    
+    
+</body>
+</html>

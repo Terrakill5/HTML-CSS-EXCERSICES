@@ -1,0 +1,68 @@
+body{
+    background-color: rgb(31, 30, 30);
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    width: 30rem;
+    margin: 3rem auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+
+}
+
+label{
+    margin-bottom: 0.5rem;
+    display: block;
+
+}
+
+.control-inline{
+    display: flex;
+}
+
+.control-inline input{
+    width: auto;
+    margin-right: 0.5rem;
+}
+
+input,
+textarea,
+select{
+    width: 100%;
+    display: block;
+    margin-bottom: 1rem ;
+    box-sizing: border-box;
+    font: inherit;
+    border: 1px solid rgb(184,184,184);
+    padding: 0.25rem;
+    color: rgb(59, 53, 53) ;
+}
+
+textarea{
+    resize: none;
+}
+
+input:focus,
+textarea:focus{
+    background-color: rgb(221, 159, 213);
+    color: rgb(32,5,63);
+    border-color: rgb(200,200,200);
+}
+
+button{
+    display: block;
+    font: inherit; /* Hereda el font del body pues el default lo sobreescribe*/
+    background-color: rgb(32,5,63);
+    color: white;
+    border: 1px solid rgb(32,5,63);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer; /* Agrega un cursor en el boton*/
+}
+
+button:hover{
+    background-color: rgb(52,14,95);
+    border-color: rgb(52,14,95);
+}

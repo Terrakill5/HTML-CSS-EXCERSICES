@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <main>
+        
+        <form action="">
+            <h2>How can we help you?</h2>
+            <label for="username">Your Name</label>
+            <input type="text" name="user-name" id="username" required>
+
+            <label for="useremail" >Your E-Mail Address</label>
+            <input type="email" name="user-email" id="useremail" required>
+
+            <label for="userphone" >Your Phone Number</label>
+            <input type="number" name="user-phone" id="userphone" required>
+
+            <label for="usermessage" >Your Message</label>
+            <textarea name="" id="" cols="8" rows="10" required></textarea>
+
+            <label for="findus">How did you find us?</label>
+            <select id="findus" name="search">
+                <option value="Web">Web Search</option>
+                <option value="Mouth">Word of Mouth</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <h2>How should we reply?</h2>
+            <ul class="control-inline">
+                <li class="lista">
+                    <input type="radio" id="call" name="reply" value="call-verify" required>
+                    <label for="call">Call me</label>
+                </li>
+                <li class="lista">
+                    <input type="radio" name="reply" id="email" value="email-verify">
+                    <label for="email">Send me an email</label>
+                </li>
+                <li class="lista">
+                    <input type="radio" name="reply" id="dont" value="dont-verify">
+                    <label for="dont">Don't reply</label>
+                </li>
+            </ul>
+            <div class="control-inline">
+                <div class="lista">
+                    <input type="checkbox" name="terms" id="agree-terms" required>
+                    <label for="agree-terms">Accept Terms</label>
+                </div>
+                
+            </div>
+            <div class="pos-button">
+                <div class="pos-clear">
+                    <button type="reset">Clear</button>
+                </div>
+                <button>Summit</button>
+            </div>
+            
+        </form>
+
+    </main>
+    
+    
+</body>
+</html>
