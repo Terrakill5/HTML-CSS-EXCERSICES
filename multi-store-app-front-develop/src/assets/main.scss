@@ -1,0 +1,8 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+body {
+  @apply text-slate-300;
+  @apply bg-slate-800; //así se aplican clases de tailwind a sass
+}
